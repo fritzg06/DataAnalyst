@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+
+<H1>Links</H1>
+
+<p>My links in Data Analyst</p>
+
+<button class="collapsible">Data Analyst</button>
+<div class="content">
+
+<p><H4>[Learning Reosurces & Platforms]</H4>
+<a href="https://refocus.thinkific.com/courses/take/data-analyst-main-course">Refocus Data Analyst</a><br>
+<br>
+</p>
+    
+<p><H4>[Community Support]</H4>
+<a href="https://discord.com/channels/982958063042588702/982965643743735828">Refocus Discord Channel</a><br>
+</p>
+    
+<p><H4>[Websites]</H4>
+<a href="https://www.cio.com/analytics">CIO</a><br>
+<a href="https://www.kdnuggets.com/">KD</a><br>
+<a href="https://fivethirtyeight.com/">FiveThirtyEight</a><br>
+<a href="https://medium.com/tag/data-analytics">Medium</a><br>
+-<a href="https://medium.com/kaggle-blog">Medium: Kaggle Blog</a><br>
+<a href="https://www.ibm.com/blogs/journey-to-ai/">IBM: Journey to AI</a><br>
+</p>
+
+<p><H4>[Python and SQL Practice]</H4>
+<a href="https://www.w3schools.com/">W3School</a><br>
+<a href="https://checkio.org/">Checkio</a><br>
+<a href="https://www.hackerrank.com/dashboard">Hackerrank</a><br>
+<a href="https://www.sql-practice.com/">SQL-Practice</a><br>
+<a href="https://www.programiz.com/sql/online-compiler">Programiz: SQL Online Compiler</a><br>
+<a href="https://www.online-python.com">Online-Python</a><br>
+</p>
+
+<p><H4>[Twitter]</H4>
+<a href="https://twitter.com/MaxCRoser">Max Roser</a><br>
+<a href="https://twitter.com/nntaleb">Nassim Nicholas Taleb</a><br>
+<a href="https://twitter.com/NateSilver538">Nate Silver</a><br>
+</p>
+
+</div>
+
+
+
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>
